@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="styles-adicione.css">
+</head>
+<body>
+    <div><br><br><br><br>
+        <div class="form-container">
+            <h2>Cadastro de Produto</h2>
+            <form id="productForm" action="javascript:void(0);" method="post">
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="company-codigo" name="company-codigo" placeholder="Digite seu nome" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="marca" name="marca" placeholder="Digite seu email " required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="tipo" name="tipo" placeholder="Digite uma senha" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="categoria" name="categoria" placeholder="Confirme a senha" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="preco_unitario" name="preco_unitario" placeholder="Preço Unitário do Produto" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="custo" name="custo" placeholder="Custo do Produto" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="obs" name="obs" placeholder="Observação do Produto">
+                    </div>
+                </div>
+                <div class="submit-btn-wrapper">
+                    <button type="submit" class="submit-btn" onclick="addProduct()">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <br>
+        <div class="pgtpy-subtitulo">
+            <h2>Produtos Cadastrados</h2>
+            <div class="w-embed">
+                <table class="pgtpy-container-tabela" id="productTable">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Marca</th>
+                            <th>Tipo</th>
+                            <th>Categoria</th>
+                            <th>Preço Un.</th>
+                            <th>Custo</th>
+                            <th>OBS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Linhas dos produtos cadastrados serão inseridas aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
